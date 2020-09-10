@@ -18,9 +18,9 @@ import (
 	"testing"
 	"time"
 
-	"go.etcd.io/etcd/v3/clientv3"
-	recipe "go.etcd.io/etcd/v3/contrib/recipes"
-	"go.etcd.io/etcd/v3/pkg/testutil"
+	"github.com/zhiyunliu/etcd/clientv3"
+	recipe "github.com/zhiyunliu/etcd/contrib/recipes"
+	"github.com/zhiyunliu/etcd/pkg/testutil"
 )
 
 func TestBarrierSingleNode(t *testing.T) {

@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"testing"
 
-	"go.etcd.io/etcd/v3/pkg/testutil"
+	"github.com/zhiyunliu/etcd/pkg/testutil"
 )
 
 var (

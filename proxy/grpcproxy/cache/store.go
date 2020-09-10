@@ -21,9 +21,9 @@ import (
 	"sync"
 
 	"github.com/golang/groupcache/lru"
-	"go.etcd.io/etcd/v3/etcdserver/api/v3rpc/rpctypes"
-	pb "go.etcd.io/etcd/v3/etcdserver/etcdserverpb"
-	"go.etcd.io/etcd/v3/pkg/adt"
+	"github.com/zhiyunliu/etcd/etcdserver/api/v3rpc/rpctypes"
+	pb "github.com/zhiyunliu/etcd/etcdserver/etcdserverpb"
+	"github.com/zhiyunliu/etcd/pkg/adt"
 )
 
 var (

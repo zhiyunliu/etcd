@@ -18,9 +18,9 @@ package v3alarm
 import (
 	"sync"
 
-	pb "go.etcd.io/etcd/v3/etcdserver/etcdserverpb"
-	"go.etcd.io/etcd/v3/mvcc/backend"
-	"go.etcd.io/etcd/v3/pkg/types"
+	pb "github.com/zhiyunliu/etcd/etcdserver/etcdserverpb"
+	"github.com/zhiyunliu/etcd/mvcc/backend"
+	"github.com/zhiyunliu/etcd/pkg/types"
 
 	"go.uber.org/zap"
 )

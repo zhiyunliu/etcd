@@ -22,10 +22,10 @@ import (
 	"testing"
 	"time"
 
-	"go.etcd.io/etcd/v3/clientv3/mirror"
-	"go.etcd.io/etcd/v3/integration"
-	"go.etcd.io/etcd/v3/mvcc/mvccpb"
-	"go.etcd.io/etcd/v3/pkg/testutil"
+	"github.com/zhiyunliu/etcd/clientv3/mirror"
+	"github.com/zhiyunliu/etcd/integration"
+	"github.com/zhiyunliu/etcd/mvcc/mvccpb"
+	"github.com/zhiyunliu/etcd/pkg/testutil"
 )
 
 func TestMirrorSync(t *testing.T) {

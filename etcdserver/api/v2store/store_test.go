@@ -19,9 +19,9 @@ import (
 	"testing"
 	"time"
 
-	"go.etcd.io/etcd/v3/etcdserver/api/v2error"
-	"go.etcd.io/etcd/v3/etcdserver/api/v2store"
-	"go.etcd.io/etcd/v3/pkg/testutil"
+	"github.com/zhiyunliu/etcd/etcdserver/api/v2error"
+	"github.com/zhiyunliu/etcd/etcdserver/api/v2store"
+	"github.com/zhiyunliu/etcd/pkg/testutil"
 )
 
 type StoreCloser interface {

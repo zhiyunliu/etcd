@@ -18,8 +18,8 @@ import (
 	"reflect"
 	"testing"
 
-	"go.etcd.io/etcd/v3/pkg/types"
-	"go.etcd.io/etcd/v3/version"
+	"github.com/zhiyunliu/etcd/pkg/types"
+	"github.com/zhiyunliu/etcd/version"
 
 	"github.com/coreos/go-semver/semver"
 	"go.uber.org/zap"

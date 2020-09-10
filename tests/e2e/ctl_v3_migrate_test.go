@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"go.etcd.io/etcd/v3/clientv3"
-	"go.etcd.io/etcd/v3/pkg/testutil"
+	"github.com/zhiyunliu/etcd/clientv3"
+	"github.com/zhiyunliu/etcd/pkg/testutil"
 )
 
 func TestCtlV3Migrate(t *testing.T) {

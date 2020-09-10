@@ -18,10 +18,10 @@ import (
 	"context"
 	"sync"
 
-	"go.etcd.io/etcd/v3/clientv3"
-	"go.etcd.io/etcd/v3/etcdserver/api/v3rpc"
-	"go.etcd.io/etcd/v3/etcdserver/api/v3rpc/rpctypes"
-	pb "go.etcd.io/etcd/v3/etcdserver/etcdserverpb"
+	"github.com/zhiyunliu/etcd/clientv3"
+	"github.com/zhiyunliu/etcd/etcdserver/api/v3rpc"
+	"github.com/zhiyunliu/etcd/etcdserver/api/v3rpc/rpctypes"
+	pb "github.com/zhiyunliu/etcd/etcdserver/etcdserverpb"
 
 	"go.uber.org/zap"
 	"google.golang.org/grpc/codes"

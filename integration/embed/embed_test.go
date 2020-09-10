@@ -29,9 +29,9 @@ import (
 	"testing"
 	"time"
 
-	"go.etcd.io/etcd/v3/clientv3"
-	"go.etcd.io/etcd/v3/embed"
-	"go.etcd.io/etcd/v3/pkg/transport"
+	"github.com/zhiyunliu/etcd/clientv3"
+	"github.com/zhiyunliu/etcd/embed"
+	"github.com/zhiyunliu/etcd/pkg/transport"
 )
 
 var (

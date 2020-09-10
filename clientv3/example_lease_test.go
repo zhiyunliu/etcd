@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"log"
 
-	"go.etcd.io/etcd/v3/clientv3"
+	"github.com/zhiyunliu/etcd/clientv3"
 )
 
 func ExampleLease_grant() {

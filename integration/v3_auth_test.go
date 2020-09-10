@@ -21,11 +21,11 @@ import (
 	"testing"
 	"time"
 
-	"go.etcd.io/etcd/v3/auth/authpb"
-	"go.etcd.io/etcd/v3/clientv3"
-	"go.etcd.io/etcd/v3/etcdserver/api/v3rpc/rpctypes"
-	pb "go.etcd.io/etcd/v3/etcdserver/etcdserverpb"
-	"go.etcd.io/etcd/v3/pkg/testutil"
+	"github.com/zhiyunliu/etcd/auth/authpb"
+	"github.com/zhiyunliu/etcd/clientv3"
+	"github.com/zhiyunliu/etcd/etcdserver/api/v3rpc/rpctypes"
+	pb "github.com/zhiyunliu/etcd/etcdserver/etcdserverpb"
+	"github.com/zhiyunliu/etcd/pkg/testutil"
 )
 
 // TestV3AuthEmptyUserGet ensures that a get with an empty user will return an empty user error.

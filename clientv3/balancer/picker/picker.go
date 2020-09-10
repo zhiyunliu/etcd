@@ -19,6 +19,7 @@ import (
 
 	"go.uber.org/zap"
 	"google.golang.org/grpc/balancer"
+	"google.golang.org/grpc/balancer/base"
 	"google.golang.org/grpc/resolver"
 )
 
@@ -73,19 +74,19 @@ func (p Policy) String() string {
 	}
 }
 
-// New creates a new Picker.
-func New(cfg Config) Picker {
-	switch cfg.Policy {
+//NewPickBuilder NewPickBuilder
+func NewPickBuilder(p Policy) base.PickerBuilder {
+	switch p {
 	case Error:
 		panic("'error' picker policy is not supported here; use 'picker.NewErr'")
 
 	case RoundrobinBalanced:
-		return newRoundrobinBalanced(cfg)
+		return &rrPickerBuilder{}
 
 	case Custom:
 		panic("'custom' picker policy is not supported yet")
 
 	default:
-		panic(fmt.Errorf("invalid balancer picker policy (%d)", cfg.Policy))
+		panic(fmt.Errorf("invalid balancer picker policy (%d)", p.String()))
 	}
 }

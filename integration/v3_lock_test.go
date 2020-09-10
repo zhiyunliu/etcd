@@ -21,11 +21,11 @@ import (
 	"testing"
 	"time"
 
-	"go.etcd.io/etcd/v3/clientv3"
-	"go.etcd.io/etcd/v3/clientv3/concurrency"
-	recipe "go.etcd.io/etcd/v3/contrib/recipes"
-	"go.etcd.io/etcd/v3/mvcc/mvccpb"
-	"go.etcd.io/etcd/v3/pkg/testutil"
+	"github.com/zhiyunliu/etcd/clientv3"
+	"github.com/zhiyunliu/etcd/clientv3/concurrency"
+	recipe "github.com/zhiyunliu/etcd/contrib/recipes"
+	"github.com/zhiyunliu/etcd/mvcc/mvccpb"
+	"github.com/zhiyunliu/etcd/pkg/testutil"
 )
 
 func TestMutexLockSingleNode(t *testing.T) {

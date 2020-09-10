@@ -23,9 +23,9 @@ import (
 	"reflect"
 	"testing"
 
-	"go.etcd.io/etcd/v3/pkg/fileutil"
-	"go.etcd.io/etcd/v3/raft/raftpb"
-	"go.etcd.io/etcd/v3/wal/walpb"
+	"github.com/zhiyunliu/etcd/pkg/fileutil"
+	"github.com/zhiyunliu/etcd/raft/raftpb"
+	"github.com/zhiyunliu/etcd/wal/walpb"
 	"go.uber.org/zap"
 )
 

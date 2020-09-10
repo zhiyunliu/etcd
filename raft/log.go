@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"log"
 
-	pb "go.etcd.io/etcd/v3/raft/raftpb"
+	pb "github.com/zhiyunliu/etcd/raft/raftpb"
 )
 
 type raftLog struct {

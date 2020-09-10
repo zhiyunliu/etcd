@@ -18,11 +18,11 @@ import (
 	"context"
 	"sync"
 
-	"go.etcd.io/etcd/v3/auth"
-	pb "go.etcd.io/etcd/v3/etcdserver/etcdserverpb"
-	"go.etcd.io/etcd/v3/lease"
-	"go.etcd.io/etcd/v3/mvcc"
-	"go.etcd.io/etcd/v3/pkg/traceutil"
+	"github.com/zhiyunliu/etcd/auth"
+	pb "github.com/zhiyunliu/etcd/etcdserver/etcdserverpb"
+	"github.com/zhiyunliu/etcd/lease"
+	"github.com/zhiyunliu/etcd/mvcc"
+	"github.com/zhiyunliu/etcd/pkg/traceutil"
 )
 
 type authApplierV3 struct {

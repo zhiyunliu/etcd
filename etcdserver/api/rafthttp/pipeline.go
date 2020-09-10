@@ -22,11 +22,11 @@ import (
 	"sync"
 	"time"
 
-	stats "go.etcd.io/etcd/v3/etcdserver/api/v2stats"
-	"go.etcd.io/etcd/v3/pkg/pbutil"
-	"go.etcd.io/etcd/v3/pkg/types"
-	"go.etcd.io/etcd/v3/raft"
-	"go.etcd.io/etcd/v3/raft/raftpb"
+	stats "github.com/zhiyunliu/etcd/etcdserver/api/v2stats"
+	"github.com/zhiyunliu/etcd/pkg/pbutil"
+	"github.com/zhiyunliu/etcd/pkg/types"
+	"github.com/zhiyunliu/etcd/raft"
+	"github.com/zhiyunliu/etcd/raft/raftpb"
 
 	"go.uber.org/zap"
 )

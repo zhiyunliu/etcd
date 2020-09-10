@@ -15,8 +15,8 @@
 package confchange
 
 import (
-	pb "go.etcd.io/etcd/v3/raft/raftpb"
-	"go.etcd.io/etcd/v3/raft/tracker"
+	pb "github.com/zhiyunliu/etcd/raft/raftpb"
+	"github.com/zhiyunliu/etcd/raft/tracker"
 )
 
 // toConfChangeSingle translates a conf state into 1) a slice of operations creating

@@ -19,10 +19,10 @@ import (
 	"os"
 	"strings"
 
-	v3 "go.etcd.io/etcd/v3/clientv3"
-	"go.etcd.io/etcd/v3/clientv3/snapshot"
-	pb "go.etcd.io/etcd/v3/etcdserver/etcdserverpb"
-	"go.etcd.io/etcd/v3/pkg/types"
+	v3 "github.com/zhiyunliu/etcd/clientv3"
+	"github.com/zhiyunliu/etcd/clientv3/snapshot"
+	pb "github.com/zhiyunliu/etcd/etcdserver/etcdserverpb"
+	"github.com/zhiyunliu/etcd/pkg/types"
 )
 
 type simplePrinter struct {

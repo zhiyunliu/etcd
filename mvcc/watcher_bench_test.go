@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"testing"
 
-	"go.etcd.io/etcd/v3/lease"
-	"go.etcd.io/etcd/v3/mvcc/backend"
+	"github.com/zhiyunliu/etcd/lease"
+	"github.com/zhiyunliu/etcd/mvcc/backend"
 
 	"go.uber.org/zap"
 )

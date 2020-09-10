@@ -25,7 +25,7 @@ import (
 	"testing"
 
 	"github.com/coreos/go-semver/semver"
-	"go.etcd.io/etcd/v3/version"
+	"github.com/zhiyunliu/etcd/version"
 	"go.uber.org/zap"
 )
 
