@@ -3,7 +3,6 @@ package picker
 import (
 	"sync"
 
-	"github.com/micro/go-micro/v2/logger"
 	"go.uber.org/zap"
 	"google.golang.org/grpc/balancer"
 	"google.golang.org/grpc/balancer/base"
@@ -13,7 +12,6 @@ type rrPickerBuilder struct {
 }
 
 func (b *rrPickerBuilder) Build(info base.PickerBuildInfo) balancer.Picker {
-	logger.Infof("roundrobinPicker: newPicker called with info: %v", info)
 	if len(info.ReadySCs) == 0 {
 		return base.NewErrPicker(balancer.ErrNoSubConnAvailable)
 	}
@@ -21,7 +19,6 @@ func (b *rrPickerBuilder) Build(info base.PickerBuildInfo) balancer.Picker {
 	for sc := range info.ReadySCs {
 		scs = append(scs, sc)
 	}
-	logger.Infof("return rrPicker")
 	return &rrPicker{
 		subConns: scs,
 		// Start at a random index, as the same RR balancer rebuilds a new
