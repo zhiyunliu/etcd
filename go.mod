@@ -1,4 +1,4 @@
-module github.com/zhiyunliu/etcd/v3
+module github.com/zhiyunliu/etcd
 
 go 1.15
 
